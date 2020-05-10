@@ -1,0 +1,1 @@
+document.getElementById("nav01").innerHTML = "<ul id='menu'>" + "<li><a href='index.html'>Home</a></li>" + "<li><a href='interests.html'>Interests</a></li>" + "<li><a href='contact.html'>Contact</a></li>" + "<li><a href='final-project.html'>Research</a></li>" + "</ul>";

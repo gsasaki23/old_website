@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <html lang="en-US"></html>
+        <title>Gaku Sasaki | About Me</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="Information about Gaku Sasaki">
+        <meta charset="UTF-8">
+        <meta name="author" content="Gaku Sasaki">
+    </head>
+    
+    <body>
+        <nav id="nav01"></nav>
+
+        <h1>GAKU SASAKI</h1>
+        
+        <h2> More About Me</h2>
+        
+        <img id="resume" alt="My resume" src="resume.png"/>
+        <p>A printable copy can be found <a href="resume.png">here</a>.</p>
+        
+        <p>Try pressing the <kbd>BUTTON</kbd> below to take a look at one of my interests or skills.</p>
+        <script>
+            function getMessage() {
+                var facts = [];
+                facts[0] = "Piano: \n\nMy Father works a private piano teacher, so I have played the piano for as long as I can remember. I have studied mostly classical music, with experiences in performance, music theory, composition, and pedagogy. \n\nOne of my biggest highlights as a pianist was performing at Carnegie Hall in New York with the Piano Program from the Orange County High School of the Arts. \n\nMy favorite piece to play is Brahms' Rhapsody in g minor, Op.79, No.2.";
+                facts[1] = "Kendo: \n\nI started practicing kendo at Gardena Kendo Dojo in Los Angeles in 2005. Since then, I have trained up to 3rd Dan (3rd Degree Black Belt), and I have won awards at both local and national tournaments as a representative of the Southern California Kendo Organization (SCKO). \n\nI currently practice as a member of the Kendo Club at UC Irvine, and I hope to make it a lifelong hobby even after graduating college.";
+                facts[2] = "Taiko: \n\nI started playing taiko with Jodaiko, a student-ran taiko group in UC Irvine, in 2014. I have performed at Jodaiko's annual concert, as well as Obon Festivals in Gardena and San Jose. \n\nI am currently an active member as a second year in Generation 23.";
+                facts[3] = "Computers: \n\nMy first computer was a white iMac that my parents gave me as a birthday gift in 2007. Since then, I have grown very interested in how it works, which led to my decision to study computer science and informatics when I got into college. Although I only have minimal experience, I have knowledge of programming in Python, Java, HTML, CSS, and JavaScript. \n\nI currently use my 2013 MacBook Air as my main machine, and my Lenovo Y40-80 Laptop as a secondary machine.";
+                facts[4] = "Sports: \n\nGrowing up, I always loved watching sports more than actually playing them. \n\nMy favorite sports to watch include Baseball, Basketball, and American Football. However, I am not a committed fan to any professional team.";
+                facts[5] = "Pugs: \n\nMany friends at college have told me that my facial expressions and personality resemble that of a pug. \n\nBecause of that influence, I've grown to LOVE pugs. More than half of the instagram accouns I follow are pug-related, and I never miss the opportunity to buy cute pug merchandise when I find one.";
+                facts[6] = "Video Games: \n\nEven though I loved playing and discussing video games with friends as a child, because my parents were very much against them, the first console I ever owned was very late - a Nintendo DS, to play Pokemon Pearl. Since then, I have slowly but surely expanded my collection to include many other DS games. I was a very avid player of League of Legends through later years of High School and early College, even though I have never been ranked past high Silver. \n\nI currently play games mostly on my phone, including Puzzle and Dragons, both on NA and JP, and Hearthstone.";
+                facts[7] = "Manga: \n\nI've grown up reading and breathing manga, and I have a collection of about two shelves now. I also have an external harddrive dedicated only to PDFs of manga. For all titles, I choose to only read in Japanese.";
+                
+                document.getElementById("butn").innerText = facts[Math.floor(Math.random()*facts.length)];
+            }
+        </script>
+        <button onclick="getMessage()">Click Me!</button>
+        <p id="butn"></p>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
